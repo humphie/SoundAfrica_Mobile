@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" >SoundFrica
+    </string>
+    <string name="action_settings" >Settings
+    </string>
+    <string name="hello_world" >Hello world!
+    </string>
+    <string name="ALBUMTITLE">ALBUMTITLE</string>
+    <string name="ORDER">ORDER</string>
+    <string name="PRESS_TO_ORDER">Press To Order/ Purchase album</string>
+    <string name="COVER_ART">COVER_ART</string>
+    <string name="COVERART">COVER_ART</string>
+    <string name="ARTIST">ARTIST</string>
+    <string name="ALBUM_TITLE">ALBUM TITLE</string>
+    <string name="ALBUM_COVER">ALBUM_COVER</string>
+    <string name="DOWNLOAD">DOWNLOAD</string>
+    <string name="ALBUM">ALBUM</string>
+    <string name="PRICE">PRICE</string>
+    <string name="CURRENT_CREDIT">CURRENT CREDIT:</string>
+    <string name="ALBUM_PRICE">ALBUM PRICE :</string>
+    <string name="FINAL_ORDER">ORDER</string>
+    <string name="CREDENTIAL_FORM">CredentialForm</string>
+    <string name="FIRSTNAME">FirstName</string>
+    <string name="LASTNAME">LastName</string>
+    <string name="ACCOUNT_NAME">AccountName</string>
+    <string name="MOBILE_NUMBER">MobileNumber</string>
+    <string name="USER_NAME">UserName</string>
+    <string name="PASSWORD">PassWord</string>
+
+</resources>

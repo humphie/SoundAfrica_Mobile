@@ -1,0 +1,103 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/bg">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="./managerUIs/AlbumManagerUI" >
+
+        <ListView
+                android:id="@+id/trackView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/coverArt"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="26dp"
+                android:fastScrollEnabled="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true">
+        </ListView>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/coverArt"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/bebe"
+                android:layout_alignParentLeft="true"
+                android:minWidth="40dp"
+                android:minHeight="40dp"
+                android:maxWidth="40dp"
+                android:maxHeight="40dp"
+                android:adjustViewBounds="false"
+                android:contentDescription="@string/COVER_ART"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/albumTitle"
+                android:layout_below="@+id/order"
+                android:layout_toRightOf="@+id/coverArt"
+                android:layout_marginTop="11dp"
+                android:text="@string/ALBUMTITLE"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ORDER"
+                android:id="@+id/order"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+                android:enabled="true"
+                android:hint="@string/PRESS_TO_ORDER"
+                android:layout_toRightOf="@+id/coverArt"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/samplerBar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_margin="20dp"
+            android:alpha="100"
+            android:background="#808080"
+            android:dividerPadding="11dp"
+            android:padding="4dp"
+            android:baselineAligned="false">
+
+        <TextView
+                android:id="@+id/sampler_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PLAYING"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#fff"
+                android:visibility="gone"/>
+
+        <ToggleButton
+                android:id="@+id/playPause_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:onClick="onClick"
+                android:background="#808080"
+                android:drawableLeft="@drawable/images"
+                android:text="Play"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#fff"
+                android:visibility="gone"/>
+        <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</FrameLayout>

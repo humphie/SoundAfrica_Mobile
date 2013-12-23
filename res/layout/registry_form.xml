@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/mainLayout"
+             android:layout_height="fill_parent"
+             android:layout_width="fill_parent"
+             android:stretchColumns="1"
+             android:background="@drawable/bg">
+
+
+
+    <TableRow android:layout_marginBottom="12dip">
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="@string/CREDENTIAL_FORM"
+                android:textSize="25sp"
+                android:textColor="#1affdf"/>
+
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+                android:id="@+id/firstNameLabel"
+                android:padding="3dip"
+                android:text="@string/FIRSTNAME"
+                android:textSize="20sp"
+                android:textColor="#25fff8"/>
+
+        <EditText android:id="@+id/firstName"
+                  android:padding="3dip" android:inputType="text"
+                  android:visibility="visible"
+                  android:textColor="#1bff0d"/>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+                android:id="@+id/lastNameLabel"
+                android:padding="3dip"
+                android:text="@string/LASTNAME"
+                android:textSize="20sp"
+                android:textColor="#15fff7"/>
+
+        <EditText android:id="@+id/lastName"
+                  android:padding="3dip" android:inputType="text"
+                  android:textColor="#2bff17"/>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+                android:id="@+id/AccountLabel"
+                android:padding="3dip"
+                android:text="@string/ACCOUNT_NAME"
+                android:textSize="20sp"
+                android:textColor="#11fff1"/>
+
+        <EditText android:id="@+id/accountName"
+                  android:padding="3dip" android:inputType="text"
+                  android:textColor="#0eff11"/>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+                android:id="@+id/mobileNumberLabel"
+                android:padding="3dip"
+                android:text="@string/MOBILE_NUMBER"
+                android:textSize="20sp"
+                android:textColor="#1efff0"/>
+
+        <EditText android:id="@+id/mobile"
+                  android:padding="3dip" android:inputType="text"
+                  android:textColor="#37ff20"/>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+                android:id="@+id/userNameLabel"
+                android:padding="3dip"
+                android:text="@string/USER_NAME"
+                android:textSize="20sp"
+                android:textColor="#10fff5"/>
+
+        <EditText android:id="@+id/username"
+                  android:padding="3dip" android:inputType="text"
+                  android:textColor="#3aff3f"/>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+                android:id="@+id/passwordLabel"
+                android:padding="3dip"
+                android:text="@string/PASSWORD"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:textColor="#10fffc"/>
+
+        <EditText
+                android:id="@+id/password"
+                android:inputType="text|textPassword"
+                android:padding="3dip"
+                android:password="true"
+                android:textColor="#0aff1f">
+
+            <requestFocus />
+
+        </EditText>
+    </TableRow>
+
+
+
+
+
+
+
+</TableLayout>

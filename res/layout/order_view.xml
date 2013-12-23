@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/bg">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|top">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/coverArt"
+                android:src="@drawable/bebe"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/ALBUM_COVER"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DOWNLOAD"
+                android:id="@+id/download"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="26dp"
+                android:singleLine="true"
+                android:textColorHighlight="#10d8ff"
+                android:textColor="@android:color/black"
+                android:typeface="normal"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/ALBUM"
+                android:id="@+id/textView"
+                android:layout_below="@+id/coverArt"
+                android:layout_alignParentLeft="true"
+                android:textColor="#25e2ff"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/PRICE"
+                android:id="@+id/textView2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="#12acff"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/albumName"
+                android:layout_below="@+id/coverArt"
+                android:layout_toRightOf="@+id/download"
+                android:layout_alignRight="@+id/coverArt"
+                android:inputType="text"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/price"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_alignLeft="@+id/albumName"/>
+
+    </RelativeLayout>
+</FrameLayout>
